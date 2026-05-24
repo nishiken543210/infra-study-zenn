@@ -3,7 +3,7 @@ title: "クラウドじゃなく、自宅のサーバーに Linux 学習プラ�
 emoji: "🖥️"
 type: "idea"
 topics: ["linux", "proxmox", "homelab", "cloudflare", "インフラ"]
-published: false
+published: true
 ---
 
 ## 最初はクラウドで作るつもりだった
