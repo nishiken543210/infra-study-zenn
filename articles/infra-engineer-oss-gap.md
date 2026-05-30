@@ -3,7 +3,7 @@ title: "業務インフラ経験者がホームラボで気づいた「知識の
 emoji: "🔍"
 type: "idea"
 topics: ["linux", "proxmox", "homelab", "ネットワーク", "インフラ"]
-published: false
+published: true
 ---
 
 前回の記事では、自宅に HPE ML30 を買って Proxmox を入れた話を書きました。

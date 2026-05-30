@@ -3,7 +3,7 @@ title: "インフラ経験者が初めて自宅サーバーを買って Proxmox 
 emoji: "🖥️"
 type: "tech"
 topics: ["proxmox", "homelab", "linux", "vmware", "自宅サーバー"]
-published: false
+published: true
 ---
 
 前回の記事では、「なぜクラウドではなく実機にこだわるのか」という話を書きました。
