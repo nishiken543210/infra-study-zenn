@@ -3,7 +3,7 @@ title: "git 履歴を辿ったら AI が生きていた ── 静的サイト�
 emoji: "🔍"
 type: "tech"
 topics: ["cloudflare", "cloudflare-workers", "claude", "homelab", "インフラ"]
-published: false
+published: true
 ---
 
 前回の記事では、業務インフラ経験者がホームラボで気づいた「知識の穴」の話を書きました。
