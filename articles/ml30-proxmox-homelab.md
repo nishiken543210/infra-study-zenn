@@ -133,4 +133,4 @@ Proxmox の管理画面から Ubuntu Server の ISO を読み込んで、仮想�
 
 制作の過程は X でも投稿しています。よかったらフォローしてください。
 
-@[card](https://x.com/tato3_01)
+@[card](https://x.com/taro3_01)

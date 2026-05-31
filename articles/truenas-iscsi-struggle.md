@@ -171,4 +171,4 @@ TrueNAS VM (10.10.10.10)
 
 制作の過程は X でも投稿しています。よかったらフォローしてください。
 
-@[card](https://x.com/tato3_01)
+@[card](https://x.com/taro3_01)

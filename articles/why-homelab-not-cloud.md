@@ -143,5 +143,5 @@ TrueNAS の iSCSI 設定がなぜかつながらなくて、原因を調べ続�
 
 制作の過程は X でも投稿しています。よかったらフォローしてください。
 
-@[card](https://x.com/tato3_01)
+@[card](https://x.com/taro3_01)
 
