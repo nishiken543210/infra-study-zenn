@@ -16,7 +16,7 @@ published: false
 
 一言でいうと、**自宅サーバー上で動く Linux 学習プラットフォーム**です。
 
-ブラウザさえあれば、受講者がどこからでも Linux やネットワークの実機演習をできる環境を作ろうとしています。AWS や VirtualBox ではなく、物理サーバーにこだわっている理由は[この連載の最初の記事](https://zenn.dev/tato3_01/articles/why-homelab-not-cloud)に書いたとおりです。
+ブラウザさえあれば、受講者がどこからでも Linux やネットワークの実機演習をできる環境を作ろうとしています。AWS や VirtualBox ではなく、物理サーバーにこだわっている理由は[この連載の最初の記事](https://zenn.dev/infra_study_ze/articles/why-homelab-not-cloud)に書いたとおりです。
 
 ---
 
@@ -71,7 +71,7 @@ published: false
 
 サイト本体は Cloudflare Pages でホストしています。静的コンテンツなので、`git push` すれば自動でデプロイされます。
 
-AI 相談機能は別の Cloudflare Worker として動いています。各章の「AI に相談」ボタンを押すと、その Worker に質問が飛んで回答が返ってきます。「[git 履歴を辿ったら AI が生きていた](https://zenn.dev/tato3_01/articles/ai-worker-revival)」で書いた Worker です。
+AI 相談機能は別の Cloudflare Worker として動いています。各章の「AI に相談」ボタンを押すと、その Worker に質問が飛んで回答が返ってきます。「[git 履歴を辿ったら AI が生きていた](https://zenn.dev/infra_study_ze/articles/ai-worker-revival)」で書いた Worker です。
 
 ### 自宅 LAN への入口（Cloudflare Tunnel）
 
@@ -83,7 +83,7 @@ HPE ML30 Gen10 上に Proxmox VE を入れて、複数の VM を動かしてい�
 
 ### ストレージ（TrueNAS）
 
-TrueNAS SCALE が、iSCSI で受講者 VM にブロックデバイスを提供しています。受講者が `fdisk` や `mkfs` を打てるのは、この iSCSI LUN があるからです。「仮想ディスクを物理ディスクのように扱う」体験を作りたかったので、[iSCSI が開通するまでの話](https://zenn.dev/tato3_01/articles/truenas-iscsi-struggle)で書いた構成はかなりこだわっています。
+TrueNAS SCALE が、iSCSI で受講者 VM にブロックデバイスを提供しています。受講者が `fdisk` や `mkfs` を打てるのは、この iSCSI LUN があるからです。「仮想ディスクを物理ディスクのように扱う」体験を作りたかったので、[iSCSI が開通するまでの話](https://zenn.dev/infra_study_ze/articles/truenas-iscsi-struggle)で書いた構成はかなりこだわっています。
 
 ### 受講者の動線
 
