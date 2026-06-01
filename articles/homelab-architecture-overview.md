@@ -3,7 +3,7 @@ title: "自宅ホームラボの全体構成を整理する ── 物理サー�
 emoji: "🏗️"
 type: "tech"
 topics: ["proxmox", "homelab", "cloudflare", "truenas", "インフラ"]
-published: false
+published: true
 ---
 
 これまでの連載で Proxmox を入れた話、TrueNAS で iSCSI を構成した話、Cloudflare Worker を繋いだ話を書いてきました。
