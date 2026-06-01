@@ -1,5 +1,5 @@
 ---
-title: "git 履歴を辿ったら AI が生きていた ── 静的サイトに Cloudflare Worker を繋ぎ直した話"
+title: "消したはずの AI 機能が動いていた ── 自宅で作る学習サイトと Cloudflare の話"
 emoji: "🔍"
 type: "tech"
 topics: ["cloudflare", "cloudflare-workers", "claude", "homelab", "インフラ"]

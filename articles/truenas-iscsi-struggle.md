@@ -1,5 +1,5 @@
 ---
-title: "TrueNAS の iSCSI が開通するまでの話（失敗談あり）"
+title: "自宅サーバーのディスクを「本物のストレージ」にする ── TrueNAS で iSCSI に挑んでハマった話"
 emoji: "💾"
 type: "tech"
 topics: ["truenas", "iscsi", "proxmox", "homelab", "自宅サーバー"]
