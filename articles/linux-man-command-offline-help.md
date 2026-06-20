@@ -1,5 +1,5 @@
 ---
-title: "Linuxで困ったとき、ネットがなくても調べられる。manコマンドを読んでみる"
+title: "インフラエンジニアでも意外と知らない。ネットが使えない現場で頼れるLinuxのmanコマンド。"
 emoji: "📖"
 type: "tech"
 topics: ["Linux", "server", "infra", "初心者", "command"]
