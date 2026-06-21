@@ -318,9 +318,9 @@ Proxmoxの仮想ディスク
 
 まずは Linux の基礎を読んでみてください。
 
-**Linux の基礎:** https://infra-study.org/part1-chapter01
+**Linux の基礎:** [infra-study.org/part1-chapter01](https://infra-study.org/part1-chapter01)
 
-**感想フォーム:** https://tally.so/r/eqvX8l
+**感想フォーム:** [感想フォーム（Tally）](https://tally.so/r/eqvX8l)
 
 ---
 
