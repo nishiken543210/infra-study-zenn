@@ -77,21 +77,28 @@ book_unit: "linux-basics"  # まとめ単位スラッグ（任意・章をまた
 
 トーン：制作ログ寄りの一人称・会話調。**断定しすぎず、不確実性に正直**。教科書解説ではなく「現場でどう判断したか」。
 
+> **文体の正本は [`VOICE-PROFILE.md`](VOICE-PROFILE.md)**（人称・段落長の数値基準・必ず使う型5つ・禁止語）。
+> このガイドは「何を書くか（構造）」、VOICE-PROFILE は「どう書くか（声）」。記事を書くときは両方読む。
+
 ---
 
-## 4. 公開前セキュリティチェック（push前に必須・grep）
+## 4. 公開前チェック（push前に必須・lint）
 
-公開リポ（public）なので、下記が**1件でも出たらマスク/除去してから**コミット。
-
-- 内部IP（`192.168.` `172.16.` `10.x`）/ MAC（`94:40:c9` 等）
-- ユーザー名・固有名（`nishiken` / `nk` / `ops` / `alice` / `root@`）
-- 内部ホスト名（`learner01` `workstation01` `l3router01` `proxmox` 等）
-- 認証情報（パスワード・APIキー・`lab-XXXX`）/ Worker URL（`*.workers.dev`）
-- 禁止用語（「シミュレーター」）/ 内部連番（`S-01` などの社内ID）
+このリポは public。**検出パターンの実値をここに書くとそれ自体が漏えいになる**ため、
+チェックは非公開側の lint スクリプトに集約する。
 
 ```bash
-grep -nEi '192\.168\.|172\.16\.|10\.[0-9]+\.|[0-9a-f]{2}(:[0-9a-f]{2}){5}|nishiken|workers\.dev|\b(nk|ops|alice)\b|root@|lab-[0-9a-z]|S-[0-9]{2}|シミュレーター' articles/<slug>.md
+bash outputs/scripts/qa/article-lint.sh zenn-content/articles/<slug>.md
 ```
+
+lint は4層で見る。**BLOCK が 0 になるまで commit しない**（終了コード 1）。
+
+| 層 | 内容 | 扱い |
+|---|---|---|
+| `[SEC]` | 公開してはいけない実値（内部IP・MAC・ホスト名・アカウント名・認証情報・内部URL） | BLOCK |
+| `[JARGON]` | 外部読者に伝わらない内部前提（内部ID・内部ファイル名・内部呼称） | BLOCK |
+| `[STYLE]` | AI 生成文の典型パターン（`VOICE-PROFILE.md` §5） | WARN |
+| `[STRUCT]` | frontmatter 必須キー・コマンド/出力ペア・扱わない範囲・段落長 | WARN |
 
 実機ログを載せる場合は、識別に不要な実値（IP/ユーザー名/MAC/ホスト名）を**伏せるか汎用化**してから `:::details` に入れる。
 

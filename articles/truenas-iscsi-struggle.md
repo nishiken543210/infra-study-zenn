@@ -74,7 +74,7 @@ iqn.2005-10.org.freenas.ctl:extent-lun0
 
 **Portal** というのも出てきます。これは「どの IP アドレス・ポートで iSCSI の接続を受け付けるか」を定義するもの。
 
-うちの TrueNAS は `10.10.10.10:3260` というアドレスで待ち受けていました。これは Proxmox 内の管理用ネットワーク（vmbr1）専用の IP で、外からは直接見えない設計になっています。ということは、接続する VM もこのネットワーク（10.10.10.0/24）に参加していないといけない。
+うちの TrueNAS は `192.0.2.10:3260` というアドレスで待ち受けていました。これは Proxmox 内のストレージ専用ネットワークの IP で、外からは直接見えない設計になっています。ということは、接続する VM もこのネットワーク（192.0.2.0/24）に参加していないといけない。
 
 「あ、VM にネットワークインターフェースが足りない」
 
@@ -117,7 +117,7 @@ ZFS のプール、zvol（仮想ディスク）、Portal、Target、Extent——
 VM に NIC を追加して、`open-iscsi` をインストールして、`iscsiadm` で探索をかけると——ターゲットが見えた。
 
 ```
-10.10.10.10:3260,1 iqn.2005-10.org.freenas.ctl:extent-lun0
+192.0.2.10:3260,1 iqn.2005-10.org.freenas.ctl:extent-lun0
 ```
 
 ログインして、`lsblk` でディスク一覧を見ると、新しいデバイスが追加されている。`/dev/sdb` が現れていた。
@@ -145,7 +145,7 @@ VM に NIC を追加して、`open-iscsi` をインストールして、`iscsiad
 今は TrueNAS の iSCSI を使って、Proxmox のストレージとして 100GB の LUN を提供しています。
 
 ```
-TrueNAS VM (10.10.10.10)
+TrueNAS VM (192.0.2.10)
   └── ZFS pool: datapool1
        └── zvol: zvol-lun0 (100GB)
             └── iSCSI Target → Proxmox がストレージとして認識
