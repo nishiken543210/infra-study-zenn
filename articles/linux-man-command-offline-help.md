@@ -352,19 +352,15 @@ man man
 
 ## ご紹介
 
-感想をもとにコンテンツを改善しながら、いずれは実機サーバーに触れる演習も用意していく予定です。
+自分は、自宅に物理サーバーを置いて、インフラを学べる場所を作っています。
 
-まずは Linux の基礎を読んでみてください。
+教材は登録なしで無料で読めます。実機のサーバーに接続する演習は構築中で、まだ全章には対応していません。
 
-**Linux の基礎:** https://infra-study.org/part1-chapter01
+**全章インデックス:** [infra-study.org/curriculum](https://infra-study.org/curriculum)
 
-**感想フォーム:** https://tally.so/r/eqvX8l
+**感想フォーム:** [感想フォーム（Tally）](https://tally.so/r/eqvX8l)
 
 ---
-
-この記事は、infra-study「Part 1 / Chapter 1」でLinuxの基礎を読むときの、おまけとして作成しています。
-
-よかったら見てみてください。
 
 X（@taro3_01）で更新を告知しています。フォローすると次回の通知が届きます。
 
