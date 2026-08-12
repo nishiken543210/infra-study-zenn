@@ -4,6 +4,10 @@ emoji: "🏗️"
 type: "tech"
 topics: ["proxmox", "homelab", "cloudflare", "truenas", "インフラ"]
 published: true
+book_part: 0
+book_chapter: 0
+book_order: 5
+book_unit: "homelab-architecture"
 ---
 
 これまでの連載で Proxmox を入れた話、TrueNAS で iSCSI を構成した話、Cloudflare Worker を繋いだ話を書いてきました。

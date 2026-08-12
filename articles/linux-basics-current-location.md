@@ -4,6 +4,10 @@ emoji: "🧭"
 type: "idea"
 topics: ["linux", "infra", "server", "beginner"]
 published: false
+book_part: 1
+book_chapter: 1
+book_order: 1
+book_unit: "linux-basics"
 ---
 
 この記事では、Linuxの基礎として、気軽に操作するための最初の感覚をつかむことを目的にしています。

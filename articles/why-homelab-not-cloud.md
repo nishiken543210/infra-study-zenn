@@ -4,6 +4,10 @@ emoji: "🖥️"
 type: "idea"
 topics: ["linux", "proxmox", "homelab", "cloudflare", "インフラ"]
 published: true
+book_part: 0
+book_chapter: 0
+book_order: 11
+book_unit: "project-origin"
 ---
 
 ## 最初はクラウドで作るつもりだった

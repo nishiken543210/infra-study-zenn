@@ -4,6 +4,10 @@ emoji: "💽"
 type: "tech"
 topics: ["Proxmox", "Linux", "server", "infra", "初心者"]
 published: false
+book_part: 3
+book_chapter: 5
+book_order: 1
+book_unit: "disk-lvm"
 ---
 
 この記事では、Proxmox上のLinux仮想マシンに同じ容量のディスクが複数あるとき、拡張するディスクを **Proxmoxが最初から各ディスクに付けている識別子** で特定する方法を見ていきます。

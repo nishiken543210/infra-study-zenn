@@ -4,6 +4,10 @@ emoji: "🖥️"
 type: "tech"
 topics: ["proxmox", "homelab", "linux", "vmware", "自宅サーバー"]
 published: true
+book_part: 0
+book_chapter: 0
+book_order: 10
+book_unit: "homelab-build"
 ---
 
 前回の記事では、「なぜクラウドではなく実機にこだわるのか」という話を書きました。

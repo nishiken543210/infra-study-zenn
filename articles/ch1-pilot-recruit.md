@@ -4,6 +4,10 @@ emoji: "📡"
 type: "idea"
 topics: ["linux", "homelab", "インフラ", "自宅サーバー", "linuxサーバー"]
 published: true
+book_part: 0
+book_chapter: 0
+book_order: 4
+book_unit: "pilot-recruitment"
 ---
 
 ## 作っているもの

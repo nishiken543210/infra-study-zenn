@@ -4,6 +4,10 @@ emoji: "🧱"
 type: "tech"
 topics: ["proxmox", "homelab", "vlan", "ネットワーク", "インフラ"]
 published: false
+book_part: 0
+book_chapter: 0
+book_order: 6
+book_unit: "homelab-architecture"
 ---
 
 物理サーバー1台に、仮想マシンを6台ほど詰め込んで Linux 学習環境を作っています。

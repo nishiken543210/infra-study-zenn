@@ -4,6 +4,10 @@ emoji: "📖"
 type: "tech"
 topics: ["Linux", "server", "infra", "初心者", "command"]
 published: false
+book_part: 0
+book_chapter: 0
+book_order: 9
+book_unit: "linux-reference"
 ---
 
 この記事では、Linuxを操作していて使い方が分からなくなったときに、`man`コマンドを使って自分で調べる方法を見ていきます。

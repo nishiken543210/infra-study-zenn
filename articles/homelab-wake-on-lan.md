@@ -4,6 +4,10 @@ emoji: "⚡"
 type: "tech"
 topics: ["homelab", "linux", "proxmox", "自宅サーバー", "ネットワーク"]
 published: true
+book_part: 0
+book_chapter: 0
+book_order: 7
+book_unit: "homelab-operations"
 ---
 
 前回の記事では、このプラットフォームの全体構成——1台の物理サーバーにどれだけのことを詰め込んでいるか——を整理しました。

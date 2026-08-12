@@ -4,6 +4,10 @@ emoji: "🔍"
 type: "idea"
 topics: ["linux", "proxmox", "homelab", "ネットワーク", "インフラ"]
 published: true
+book_part: 0
+book_chapter: 0
+book_order: 8
+book_unit: "homelab-learning"
 ---
 
 前回の記事では、自宅に HPE ML30 を買って Proxmox を入れた話を書きました。

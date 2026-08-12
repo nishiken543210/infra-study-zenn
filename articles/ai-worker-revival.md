@@ -4,6 +4,10 @@ emoji: "🔍"
 type: "tech"
 topics: ["cloudflare", "cloudflare-workers", "claude", "homelab", "インフラ"]
 published: true
+book_part: 0
+book_chapter: 0
+book_order: 3
+book_unit: "platform-development"
 ---
 
 前回の記事では、業務インフラ経験者がホームラボで気づいた「知識の穴」の話を書きました。
