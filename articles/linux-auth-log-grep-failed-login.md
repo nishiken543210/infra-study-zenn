@@ -72,6 +72,8 @@ SSHログインに成功した行は、次の形で残っていました。
 grep "student" /var/log/auth.log
 ```
 
+出力は長いので、一部の行だけを載せます。
+
 ```text
 2026-10-26T10:31:16.533581+09:00 <ホスト名> sshd[1605]: Accepted password for student from <接続元IP> port 58196 ssh2
 2026-10-26T10:31:16.536728+09:00 <ホスト名> sshd[1605]: pam_unix(sshd:session): session opened for user student(uid=1003) by student(uid=0)
@@ -79,7 +81,6 @@ grep "student" /var/log/auth.log
 2026-10-26T11:31:54.901226+09:00 <ホスト名> sshd[1808]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=<接続元IP>  user=student
 2026-10-26T11:31:57.248656+09:00 <ホスト名> sshd[1808]: Failed password for student from <接続元IP> port 48920 ssh2
 2026-10-26T11:31:59.507598+09:00 <ホスト名> sshd[1808]: Connection closed by authenticating user student <接続元IP> port 48920 [preauth]
-（ほか多数）
 ```
 
 ユーザー名で絞っても、成功、失敗、セッション開始、切断が一緒に出ます。ただ、139行を全部読むより、調べたい人に関係する行だけを見るほうが、かなり追いやすくなりました。
@@ -96,11 +97,12 @@ grep "student" /var/log/auth.log
 grep "student" /var/log/auth.log | grep "Accepted"
 ```
 
+ここでも、一部の行だけを載せます。
+
 ```text
 2026-10-26T10:31:16.533581+09:00 <ホスト名> sshd[1605]: Accepted password for student from <接続元IP> port 58196 ssh2
 2026-10-26T11:32:17.653402+09:00 <ホスト名> sshd[1963]: Accepted password for student from <接続元IP> port 35554 ssh2
 2026-10-26T11:32:18.675193+09:00 <ホスト名> sshd[2037]: Accepted password for student from <接続元IP> port 35558 ssh2
-（ほか）
 ```
 
 左側の`grep`が「studentを含む行」を取り出し、その結果だけを右側の`grep`が受け取ります。右側では`Accepted`を探すので、studentの行の中から成功したログインだけが残る、という流れです。
@@ -156,11 +158,12 @@ grep "Failed password" /var/log/auth.log
 tail -n 10 /var/log/auth.log
 ```
 
+10行のうち、3行だけを載せます。
+
 ```text
 2026-10-26T11:34:04.771151+09:00 <ホスト名> systemd-logind[840]: New session 28 of user student.
 2026-10-26T11:34:05.142329+09:00 <ホスト名> sshd[2518]: Disconnected from user student <接続元IP> port 43314
 2026-10-26T11:35:00.150685+09:00 <ホスト名> sshd[2571]: Accepted password for student from <接続元IP> port 34348 ssh2
-（10行のうち抜粋）
 ```
 
 `tail`は、起きたばかりの接続や切断をざっと見るときに向いています。誰か一人や、成功・失敗のどちらかへ絞りたいときは、`grep`と組み合わせるほうが目的の行を追いやすくなります。
