@@ -293,3 +293,4 @@ adm:x:4:syslog,student
 X（@taro3_01）で更新を告知しています。フォローすると次回の通知が届きます。
 
 @[card](https://x.com/taro3_01)
+
